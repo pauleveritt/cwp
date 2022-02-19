@@ -2,7 +2,7 @@ from typing import Tuple
 
 import pytest
 from cwp.laxleague.guardian import Guardian
-from laxleague.player import Player
+from cwp.laxleague.player import Player
 
 
 @pytest.fixture

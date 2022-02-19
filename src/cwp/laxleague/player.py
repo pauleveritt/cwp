@@ -18,4 +18,4 @@ class Player:
 
     @property
     def primary_guardian(self) -> Optional[Guardian]:
-        return self.guardians[0]  # if self.guardians else None
+        return self.guardians[0] if self.guardians else None

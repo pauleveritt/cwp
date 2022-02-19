@@ -10,9 +10,8 @@ def test_add_guardian(player_one, guardians):
 
 
 def test_add_guardians(player_one, guardians):
-    assert player_one.primary_guardian
     # Add one guardian
-    assert player_one.primary_guardian
+    assert player_one.primary_guardian is None
     player_one.add_guardian(guardians[0])
     player_one.add_guardians((guardians[1], guardians[2]))
     assert list(guardians) == player_one.guardians
